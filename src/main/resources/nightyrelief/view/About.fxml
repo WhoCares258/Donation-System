@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="760.0" prefWidth="850.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nightyrelief.view.AboutController">
+
+    <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+
+        <!-- Who Are We -->
+        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="189.0" styleClass="label-subtitle" text="Who Are We" />
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="680.0" text="We are NightyRelief, a dedicated organization that connects donors, farmers, and recipients to provide monetary and agricultural aid efficiently and transparently." textAlignment="CENTER" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+
+        <!-- The Problem -->
+        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="195.0" styleClass="label-subtitle" text="The Problem" />
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="680.0" text="Millions of people face agricultural shortages and food insecurity every year. Farmers lack resources, and recipients face rising costs and limited supply especially with the fact that poverty started to rise back since 2020" textAlignment="CENTER" wrapText="true" />
+
+        <!-- Graphs Side by Side -->
+        <HBox fx:id="chartHBox" alignment="CENTER" spacing="10.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+        </HBox>
+
+        <!-- Our Mission -->
+        <Label prefHeight="26.0" prefWidth="179.0" styleClass="label-subtitle" text="Our Mission" />
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="680.0" text="Our mission is to bridge the gap between agricultural aid supply and demand, empowering communities through transparency, collaboration, and technology." textAlignment="CENTER" wrapText="true" />
+
+    </VBox>
+</AnchorPane>

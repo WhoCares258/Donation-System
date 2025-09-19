@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nightyrelief.view.RecipientController">
+   <children>
+      <HBox prefHeight="125.0" prefWidth="1210.0" styleClass="bottom-border">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="91.0" prefWidth="254.0" styleClass="label-title" text="NightyRelief" textFill="#2b984c">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="71.0" prefWidth="572.0" styleClass="label-header" text="Welcome Recipient">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#handleLogout" prefHeight="59.0" prefWidth="153.0" text="Logout">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="28.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="35.0" layoutY="123.33333333333333" prefHeight="677.0" prefWidth="291.0" spacing="30.0" styleClass="right-border" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="918.6666666666667" AnchorPane.topAnchor="124.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="91.0" prefWidth="95.0" styleClass="label-title" text="Tabs" textFill="#2b984c">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="186.0" styleClass="button-active" text="Dashboard">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleAbout" prefHeight="60.0" prefWidth="186.0" text="About">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleImpact" prefHeight="60.0" prefWidth="186.0" text="Impact">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleContact" prefHeight="60.0" prefWidth="186.0" text="Contact">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="70.0" />
+         </padding>
+      </VBox>
+      <AnchorPane layoutX="296.0" layoutY="127.0" prefHeight="379.0" prefWidth="921.0" styleClass="bottom-border" AnchorPane.bottomAnchor="294.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="127.0">
+         <children>
+            <Label fx:id="fullNameLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="196.0" layoutY="18.0" styleClass="label-header" text="Muhammad Umer Danka" />
+            <Label fx:id="icNumberLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="305.0" layoutY="130.0" styleClass="label-description" text="000000-00-0000" />
+            <Label fx:id="phoneNumberLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="700.0" layoutY="130.0" styleClass="label-description" text="011-11111111" />
+            <Label fx:id="emailLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="348.0" layoutY="88.0" styleClass="label-description" text="umerdanka200000@gmail.com" />
+            <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="23.0" layoutY="271.0" styleClass="label-description" text="Supervisor Name:" />
+            <Label fx:id="supervisorNameLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="228.0" layoutY="271.0" styleClass="label-description" text="Supervisor Name" />
+            <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="446.0" layoutY="271.0" styleClass="label-description" text="Supervisor Contact:">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" defaultButton="true" layoutX="766.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleEdit" text="Edit Info" />
+            <Label fx:id="supervisorContactLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="685.0" layoutY="271.0" styleClass="label-description" text="Supervisor Contact" />
+            <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="23.0" layoutY="229.0" styleClass="label-description" text="Occupation:" />
+            <Label fx:id="occupationLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="157.0" layoutY="229.0" styleClass="label-description" text="Cashier">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="409.0" layoutY="229.0" styleClass="label-description" text="Income: " />
+            <Label fx:id="incomeLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="500.0" layoutY="229.0" styleClass="label-description" text="2000" />
+            <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="23.0" layoutY="317.0" styleClass="label-description" text="Birthdate:" />
+            <Label fx:id="dateOfBirthLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="139.0" layoutY="317.0" styleClass="label-description" text="12.12.2000" />
+            <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="319.0" layoutY="317.0" styleClass="label-description" text="Household Size:" />
+            <Label fx:id="householdSizeLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="500.0" layoutY="317.0" styleClass="label-description" text="10" />
+            <Label alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="630.0" layoutY="229.0" styleClass="label-description" text="Disability: " />
+            <Label fx:id="addressLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="122.0" layoutY="185.0" styleClass="label-description" text="000000-00-0000" />
+            <Label fx:id="disabilityLabel" alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="752.0" layoutY="229.0" styleClass="label-description" text="false" />
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="177.0" layoutY="130.0" styleClass="label-description" text="IC Number: " />
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="518.0" layoutY="130.0" styleClass="label-description" text="Phone Number:" />
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="273.0" layoutY="88.0" styleClass="label-description" text="Email:" />
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="23.0" layoutY="185.0" styleClass="label-description" text="Address:" />
+            <ImageView fitHeight="155.0" fitWidth="148.0" layoutX="23.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/recipient.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="312.0" layoutY="506.0" prefHeight="270.0" prefWidth="887.0" styleClass="background" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="21.333333333333485">
+         <children>
+            <Button fx:id="moreButton" layoutX="610.0" layoutY="212.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="261.0" text="View Full History">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="14.0" prefHeight="58.0" prefWidth="419.0" styleClass="label-title" text="Recipient History" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <HBox fx:id="firstRecipientHistoryHBox" layoutX="11.0" layoutY="79.0" prefHeight="59.0" prefWidth="867.0" styleClass="split-pane">
+               <children>
+                  <Label fx:id="item1Label" prefHeight="35.0" prefWidth="260.0" styleClass="label-description" text="Family Package">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="aidDate1Label" prefHeight="35.0" prefWidth="240.0" styleClass="label-description" text="1 October 2025">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="aidStatus1Label" prefHeight="35.0" prefWidth="173.0" styleClass="label-description" text="Pending">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="aid1Button" mnemonicParsing="false" prefHeight="38.0" prefWidth="218.0" text="Received">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="secondRecipientHistoryHBox" layoutX="11.0" layoutY="144.0" prefHeight="59.0" prefWidth="867.0" styleClass="split-pane">
+               <children>
+                  <Label fx:id="item2Label" prefHeight="35.0" prefWidth="260.0" styleClass="label-description" text="Family Package">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="aidDate2Label" prefHeight="35.0" prefWidth="240.0" styleClass="label-description" text="1 July 2025">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="aidStatus2Label" prefHeight="35.0" prefWidth="173.0" styleClass="label-description" text="Delivered">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="aid2Button" mnemonicParsing="false" prefHeight="38.0" prefWidth="218.0" text="Received">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="thirdRecipientHistoryHBox" layoutX="11.0" layoutY="209.0" prefHeight="59.0" prefWidth="867.0" styleClass="split-pane">
+               <children>
+                  <Label fx:id="item3Label" prefHeight="35.0" prefWidth="260.0" styleClass="label-description" text="Family Package">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="aidDate3Label" prefHeight="35.0" prefWidth="240.0" styleClass="label-description" text="1 July 2025">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="aidStatus3Label" prefHeight="35.0" prefWidth="173.0" styleClass="label-description" text="Delivered">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="aid3Button" mnemonicParsing="false" prefHeight="38.0" prefWidth="218.0" text="Received">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="noHistoryLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="345.0" layoutY="132.0" prefHeight="41.0" prefWidth="178.0" styleClass="label-description" text="No History Data" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

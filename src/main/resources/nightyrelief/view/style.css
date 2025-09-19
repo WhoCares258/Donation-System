@@ -1,0 +1,304 @@
+/* Dark green MenuBar */
+.menu-bar {
+    -fx-background-color: #0B3D2E; /* Rich dark green */
+    -fx-border-color: #06261D;     /* Even darker for subtle separation */
+    -fx-border-width: 0 0 2 0;
+}
+
+/* Menu labels */
+.menu-bar .label {
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #D5F5E3; /* Soft mint green text */
+}
+
+/* Menu spacing */
+.menu {
+    -fx-padding: 6 18 6 18;
+}
+
+/* Hover effect for top-level menu */
+.menu:hover {
+    -fx-background-color: #145A32; /* Lively but still dark green */
+}
+
+/* Menu items inside dropdown */
+.menu-item {
+    -fx-background-color: #0B3D2E;
+    -fx-text-fill: #D5F5E3;
+    -fx-font-size: 14pt;
+}
+
+/* Hover effect for dropdown items */
+.menu-item:hover {
+    -fx-background-color: #145A32; /* Slightly lighter dark green */
+    -fx-text-fill: #FFFFFF;        /* White text for clarity */
+}
+
+.background {
+    -fx-background-color: #E3F9DC; /* Soft leafy green */
+}
+
+/* General label */
+.label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Roboto Medium", "Arial", sans-serif;
+    -fx-text-fill: #145A32; /* Dark green text */
+    -fx-opacity: 0.9;
+}
+
+/* Emphasized label */
+.label-bright {
+    -fx-font-size: 13pt;
+    -fx-font-family: "Roboto Medium", "Arial", sans-serif;
+    -fx-text-fill: #0B3D2E; /* Deeper green */
+    -fx-opacity: 1.0;
+}
+
+/* Page Header */
+.label-header {
+    -fx-font-size: 36pt;
+    -fx-text-fill: #0B3D2E; /* Forest green */
+    -fx-opacity: 1.0;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.label-huge {
+    -fx-font-size: 48pt;
+    -fx-text-fill: #0B3D2E; /* Deep forest green */
+    -fx-opacity: 1.0;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.label-subtitle {
+    -fx-font-size: 24pt;
+    -fx-text-fill: #0B3D2E; /* Rich green */
+    -fx-opacity: 1;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.label-title {
+    -fx-font-size: 30pt;
+    -fx-text-fill: #0B3D2E;
+    -fx-opacity: 1.0;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.label-description {
+    -fx-font-size: 18pt;
+    -fx-text-fill: #145A32;
+}
+
+/* Hyperlink styling */
+.hyperlink {
+    -fx-font-size: 12pt;          /* Bigger hyperlink text */
+    -fx-text-fill: #2ECC71;       /* Bright green */
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #58D68D;       /* Lighter green on hover */
+    -fx-underline: true;
+}
+
+.text-field {
+    -fx-translate-x: -10;
+    -fx-text-fill: #0B3D2E;
+    -fx-prompt-text-fill: #1E8449;
+}
+
+.text-area {
+    -fx-background-color: #D5F5E3; /* Light mint green */
+    -fx-text-fill: #0B3D2E;
+    -fx-prompt-text-fill: #1E8449;
+    -fx-translate-x: -10
+}
+
+/* TableView: Light green theme */
+.table-view {
+    -fx-base: #D5F5E3;
+    -fx-control-inner-background: #D5F5E3;
+    -fx-background-color: #D5F5E3;
+    -fx-table-cell-border-color: #81C784;
+    -fx-table-header-border-color: #66BB6A;
+    -fx-padding: 5;
+    -fx-border-color: #66BB6A;
+    -fx-border-width: 1;
+}
+
+/* Header row background */
+.table-view .column-header-background {
+    -fx-background-color: #81C784;
+    -fx-border-color: #388E3C;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Header label */
+.table-view .column-header .label {
+    -fx-font-size: 13pt;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #0B3D2E;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+/* Selected row */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #66BB6A;
+}
+
+/* Table cell text */
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #0B3D2E;
+    -fx-padding: 6 10 6 10;
+}
+
+/* SplitPane invisible divider */
+.split-pane {
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.split-pane:horizontal > .split-pane-divider,
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: #388E3C; /* Dark green divider */
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.scroll-pane > .viewport {
+    -fx-alignment: center;
+}
+
+/* History HBox border */
+.hbox-history {
+    -fx-border-color: #388E3C;
+    -fx-border-width: 1;
+    -fx-padding: 15;
+}
+
+/*
+ * Metro style Push Button (Green theme)
+ */
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #145A32;          /* Dark green border */
+    -fx-border-width: 2;
+    -fx-background-radius: 4;
+    -fx-background-color: #1E8449;      /* Rich green */
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.button-big {
+    -fx-font-size: 16pt;
+}
+
+.button:hover {
+    -fx-background-color: #2ECC71;      /* Lighter vibrant green */
+}
+
+.button:pressed,
+.button:default:hover:pressed {
+    -fx-background-color: #145A32;      /* Deep green */
+    -fx-text-fill: white;
+}
+
+.button:focused {
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+
+.button:disabled,
+.button:default:disabled {
+    -fx-opacity: 1.0;
+    -fx-background-color: #A9DFBF;
+    -fx-text-fill: #27AE60;
+}
+
+.button:default {
+    -fx-background-color: #27AE60;      /* Default mid-green */
+    -fx-text-fill: white;
+}
+
+.button:default:hover {
+    -fx-background-color: #2ECC71;      /* Brighter green */
+}
+
+/* Active/Selected button */
+.button-active {
+    -fx-background-color: #81C784;   /* Soft green active */
+    -fx-text-fill: #0B3D2E;
+    -fx-border-color: #388E3C;
+    -fx-font-weight: bold;
+}
+
+.button-active:hover {
+    -fx-background-color: #A5D6A7;   /* Pastel green hover */
+}
+
+
+/* Dialog styles matching theme */
+.dialog-pane {
+    -fx-background-color: #D5F5E3;
+    -fx-padding: 20px; /* More breathing room */
+}
+
+/* Applies to all labels in the dialog */
+.dialog-pane .label {
+    -fx-text-fill: #0E6251; /* Deep green text */
+    -fx-font-size: 18px;    /* Bigger text for readability */
+    -fx-font-weight: bold;  /* Bold for clarity */
+}
+
+/* Center the main content text or labels */
+.dialog-pane .content,
+.dialog-pane .content .label {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+/* Header area */
+.dialog-pane:header .header-panel {
+    -fx-background-color: #A9DFBF;
+    -fx-padding: 15px; /* More padding for better look */
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 24px;    /* Larger header */
+    -fx-text-fill: #145A32;
+    -fx-font-weight: bold;  /* Stronger presence */
+}
+
+/* Space out grid cells inside content */
+.dialog-pane .grid-pane {
+    -fx-hgap: 20px; /* Space between columns */
+    -fx-vgap: 10px; /* Space between rows */
+    -fx-alignment: center; /* Centers the entire grid */
+}
+
+.bordered-page {
+    -fx-border-color: #0B3D2E;      /* Dark green border */
+    -fx-border-width: 2px;          /* Thickness */
+    -fx-background-color: #E3F9DC;  /* Light background */
+}
+
+.bottom-border {
+    -fx-border-color: #0B3D2E;      /* Dark green bottom border */
+    -fx-border-width: 0 0 3px 0;    /* Only bottom border */
+}
+
+.right-border {
+    -fx-border-color: #0B3D2E;      /* Dark green right border */
+    -fx-border-width: 0 3px 0 0;    /* Only right border */
+}

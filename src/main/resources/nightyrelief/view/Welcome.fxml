@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nightyrelief.view.WelcomeController">
+   <children>
+      <ImageView fitHeight="177.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@../../images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="177.0" fitWidth="200.0" layoutX="1020.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@../../images/logo.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="297.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="141.0" prefWidth="1200.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="129.0" prefWidth="772.0" styleClass="label-huge" text="Welcome to NightyRelief">
+                     <font>
+                        <Font name="System Bold Italic" size="48.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label prefHeight="65.0" prefWidth="545.0" styleClass="label-subtitle" text="&quot;Empovering Families and Farmers&quot;" translateY="-17.0" />
+            <Label prefHeight="130.0" prefWidth="1200.0" styleClass="label-description" text="NightyRelief is a community-driven platform that helps connect those in need with food aid and agricultural support. Whether you're seeking assistance, looking to contribute as a donor, or managing community resources; join us to change the world!" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="100.0" right="100.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="392.0" prefHeight="400.0" prefWidth="1200.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="367.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/recipient.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="label-title" text="Recipient">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="300.0" styleClass="label-description" text="Apply for food aid and access community resource " textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="35.0" right="35.0" />
+                     </padding>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#handleRecipient" prefHeight="54.0" prefWidth="255.0" styleClass="button-big" text="Continue as Recipient">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="367.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/farmer.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="label-title" text="Farmer">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="300.0" styleClass="label-description" text="Apply for farm resources and donate food supplies" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="35.0" right="35.0" />
+                     </padding>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#handleFarmer" prefHeight="54.0" prefWidth="255.0" styleClass="button-big" text="Continue as Farmer ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="367.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="197.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/donor.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="label-title" text="Donor">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="300.0" styleClass="label-description" text="Donate cash to help NightyRelief cater to the needy ones" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="35.0" right="35.0" />
+                     </padding>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#handleDonor" prefHeight="54.0" prefWidth="255.0" styleClass="button-big" text="Continue as Donor">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="367.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/admin.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="label-title" text="Admin">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="300.0" styleClass="label-description" text="Manage the system including users, posts and events" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="35.0" right="35.0" />
+                     </padding>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#handleAdmin" prefHeight="54.0" prefWidth="255.0" styleClass="button-big" text="Continue as Admin">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="8.0" layoutY="781.0" text="\@ 2025 NightyRelief. All Rights reserved" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" />
+      <Label layoutX="315.0" layoutY="781.0" text="Developed by Muhammad Umer Danka for PRG2104 OOP Final Project" />
+      <Label layoutX="848.0" layoutY="781.0" text="Contact: nightyrelief@gmail.com or 011-11111111" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+      <Label layoutX="318.0" layoutY="327.0" styleClass="label-subtitle" text="Let’s Build a Brighter Future Together" />
+   </children>
+</AnchorPane>
